@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Up Down Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* Apnar pochondomoto background color dite paren */
+    }
+
+    .animated-image {
+      width: 180px; /* Proyojon onujayi size choto/boro korte paren */
+      animation: upDown 380ms ease-in-out infinite alternate;
+    }
+
+    @keyframes upDown {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-250px); /* Koto tuku up-down korbe eikhane change korte paren */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 'your-image-transparent.png' er jaygay apnar transparent image-er link ba path bosaben -->
+  <img src="https://i.postimg.cc/SsxGjNLH/FB-IMG-1793906259453.png" class="animated-image">
+
+</body>
+</html>
